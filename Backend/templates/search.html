@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resume Parser</title>
-        <link rel="stylesheet" href="../static/styles-search.css">
+<html>
+<head>
+    <title>PDF Upload and Display</title>
+    <link rel="stylesheet" href="../static/textbox-demo.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <a href="Home.html">
+                <img src="../static/assets/logo.png" class="logo">
+            </a>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="prices.html">Products</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+            </ul>
         
-    </head>
-    
-    <body>
-        <div class="hero">
-            <nav>
-                <a href="Home.html">
-                    <img src="assets/Logo.png" class="logo">
-                </a>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="search.html">Search</a></li>
-                    <li><a href="prices.html">Products</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="sign-up.html">Sign Up</a></li>
-                </ul>
-                
-            </nav>
-
-            <section>
-                <div class="search-info">
-                    <p>Find candidates for your position by searching for desired skills and experiences!</p>
-                </div>
-                <input class="search-bar" type="text" placeholder="Search..">
-                <div class="prices-btn">Purchase Joblify Pro</div>
-                <a href="prices.html"><button class="resume-list"></button></a>
-            </section>
+        </nav>
+        <div class="container">
+            <form action="" class="search-bar">
+                <input itype="text" placeholder="Enter Job Description" name="q" autocomplete="off">
+            </form>
         </div>
-            
-
+    </div>
+</body>
+<script>
+    document.body.addEventListener('keydown', (e) => {
+        if(e.key == '`'){
+            console.log('pressed Enter');
+            window.location = 'tables.html';
+        }
+    });
+</script>
 </html>

@@ -1,9 +1,7 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>price</title>
+    <title>PDF Upload and Display</title>
     <link rel="stylesheet" href="../static/textbox-demo.css">
 </head>
 <body>
@@ -23,9 +21,17 @@
         </nav>
         <div class="container">
             <form action="" class="search-bar">
-                <input itype="text" placeholder="Enter Job Description" name="q"
+                <input itype="text" placeholder="Enter Job Description" name="q" autocomplete="off">
             </form>
         </div>
     </div>
 </body>
+<script>
+    document.body.addEventListener('keydown', (e) => {
+        if(e.key == '`'){
+            console.log('pressed Enter');
+            window.location = 'results.html';
+        }
+    });
+</script>
 </html>

@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Transcript Editor</title>
-        <link rel="stylesheet" href="../static/styles-signup.css">
-    </head>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Editor</title>
+    <link rel="stylesheet" href="../static/styles-signup.css">
+
     <body>
         <div class="hero">
             <nav>
@@ -32,29 +30,9 @@
                     <p></p>
                 </div>
                 <div class="pink-side">
-                    <form action="action_page.php" method="post">                      
-                        <div class="sign-in-container">
-                          <label for="uname"><b>Username</b></label>
-                          <input type="text" placeholder="Enter Username" name="uname" >
-                      
-                          <label for="psw"><b>Password</b></label>
-                          <input type="password" placeholder="Enter Password" name="psw" >
-
-
-                          <a href="upload.html"><button type="submit"  class="sign-in-button">Login as Employee</button></a>
-
-                          <a href="search.html"> <button type="submit" class="sign-in-button">Login as Employer</button></a>
-
-                          <label>
-                            <input type="checkbox" checked="checked" name="remember"> Remember me
-                          </label>
-                        </div>
-                      
-                        <div class="sign-in-container" style="background-color:#ffffff">
-                          <a href="Home.html"><button type="button" class="cancelbtn" class="sign-in-button">Cancel</button></a>
-                          <span class="psw">Forgot <a href="#">password?</a></span>
-                        </div>
-                      </form>
+                    <p class="tag">Join Joblify as an...</p>
+                    <a href="search.html"><button>Employer</button></a>
+                    <a href="upload.html"><button>Employee</button></a>
                 </div>
             </div>
 

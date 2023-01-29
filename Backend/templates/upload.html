@@ -66,11 +66,12 @@ pdfFileInput.onchange = function() {
 }
 
 function displayPDF() {
+    window.location = 'search-res.html';
 
     var pdfFile = pdfFileInput.files[0];
     var pdfUrl = URL.createObjectURL(pdfFile);
     var pdfDisplay = document.getElementById("pdf-display");
-    pdfDisplay.innerHTML = "<embed src='" + pdfUrl + "' width='100%' height='600px'/>";
+    // pdfDisplay.innerHTML = "<embed src='" + pdfUrl + "' width='100%' height='600px'/>";
 
     console.log("pdfFile: " + pdfUrl);
     console.log(pdfFileInput.files[0]);

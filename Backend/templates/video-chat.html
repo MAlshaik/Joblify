@@ -9,7 +9,7 @@
 <body>
     <section class="container">
         <div id="toolbar">
-            <img id="logo" src="../static/assets/logo.png">
+            <a href="Home.html"><img id="logo" src="../static/assets/logo.png"></a>
             <label for="stroke"></label>
             <input id="stroke" name='stroke' type="color">
             <label for="lineWidth">Line Width</label>
@@ -20,29 +20,29 @@
         </div>
         <div class="drawing-board">
             <canvas id="drawing-board-board"></canvas>
-            <div class="camera" id="cam1"></div>
-            <div class="camera" id="cam2"></div>
+            <!-- d<iv class="camera" id="cam1"></div>
+            <div class="camera" id="cam2"></div> -->
         </div>
     </section>
     <script>
 
-cam1Btn.addEventListener('click',e => {
-    var x = document.getElementById("cam1");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-            x.style.display = "none";
-            }
-});
+// cam1Btn.addEventListener('click',e => {
+//     var x = document.getElementById("cam1");
+//             if (x.style.display === "none") {
+//                 x.style.display = "block";
+//             } else {
+//             x.style.display = "none";
+//             }
+// });
 
-cam2Btn.addEventListener('click',e => {
-    var x = document.getElementById("cam2");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-            x.style.display = "none";
-            }
-});
+// cam2Btn.addEventListener('click',e => {
+//     var x = document.getElementById("cam2");
+//             if (x.style.display === "none") {
+//                 x.style.display = "block";
+//             } else {
+//             x.style.display = "none";
+//             }
+// });
 
         const canvas = document.getElementById('drawing-board-board');
 const toolbar = document.getElementById('toolbar');

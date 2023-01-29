@@ -114,6 +114,7 @@ nav{
     display: flex;
     align-items: center;
     padding: 20px 8%;
+    background: #16191E;
 }
 
 nav .menu-img {
@@ -293,10 +294,13 @@ p.tag {
     top:125px;
     left:10%;
     width: 40%;
-    height:80%;
-    background-color: white;
+    height:70%;
+    background-color: none
 }
 
+#temp-pdf-display img{
+    width: 690px;
+}
 #number-display{
     position: absolute;
     top:125px;
@@ -317,7 +321,7 @@ p.tag {
 #out-of{
     position: absolute;
     top:-15%;
-    left:47%;
+    left:34%;
     font-size:50px;
     color:white;
 }
@@ -326,8 +330,13 @@ p.tag {
     position: absolute;
     top:325px;
     left:65%;
-    width: 20%;
-    height:55%;
-    background-color: #3e2a48;
+    width: 450px;
+    height:fit-content;
+    /* background-color: #3e2a48; */
     color:white;
+    font-size: 50px;
+}
+
+#ex-resume{
+    height:600px;;
 }
