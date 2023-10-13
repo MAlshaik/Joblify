@@ -1,0 +1,93 @@
+<!--duplicate of upload.html in front end-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Upload and Display</title>
+    <link rel="stylesheet" href="../static/styles-upload.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="nav-bar">
+            <nav>
+                <a href="Home.html">
+                    <img src="../static/assets/logo.png" class="logo">
+                </a>
+
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="prices.html">Products</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="sign-up.html">Sign Up</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+        <div class="rectangle">
+            <form>
+                <div id="pdf-drop-area">
+                    <img id="pdf-file-input" src="../static/assets/upload.png" accept="application/pdf" onclick="document.getElementById('pdf-file').click()">
+                    <p>Upload Resume</p>
+                    <input type="file" id="pdf-file" accept="application/pdf">
+                </div>
+            </form>
+        </div>
+        <div id="pdf-display"></div>
+    </div>
+
+
+    <div id="pdf-display_"></div>
+    <script type="text/javascript">
+
+var pdfDropArea = document.getElementById("pdf-drop-area");
+var pdfFileInput = document.getElementById("pdf-file");
+
+pdfDropArea.ondragover = function() {
+    this.className = "hover";
+    return false;
+}
+
+pdfDropArea.ondragleave = function() {
+    this.className = "";
+    return false;
+}
+
+pdfDropArea.ondrop = function(e) {
+    e.preventDefault();
+    this.className = "";
+    pdfFileInput.files = e.dataTransfer.files;
+    displayPDF();
+}
+
+pdfFileInput.onchange = function() {
+    displayPDF();
+}
+
+function displayPDF() {
+    window.location = 'search-res.html';
+
+    var pdfFile = pdfFileInput.files[0];
+    var pdfUrl = URL.createObjectURL(pdfFile);
+    var pdfDisplay = document.getElementById("pdf-display");
+    // pdfDisplay.innerHTML = "<embed src='" + pdfUrl + "' width='100%' height='600px'/>";
+
+    console.log("pdfFile: " + pdfUrl);
+    console.log(pdfFileInput.files[0]);
+
+    fetch('http://127.0.0.1:5001/api/resume', {
+        method: 'POST',
+        body: pdfFileInput.files[0]
+    }).then(r => r.json())
+
+    fetch('http://127.0.0.1:5001/api/matches-resume?username=Graphic%20Designer', {
+        method: 'GET',
+    }).then(r => r.json())
+}
+
+    </script>
+</body>
+</html>
+
+

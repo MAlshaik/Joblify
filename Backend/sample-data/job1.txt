@@ -1,0 +1,10 @@
+Seeking a Data Warehouse/BI Developer.
+
+Remote
+
+Responsible for designing, developing, and maintaining data warehouse and analytics architecture to meet an enterprise’s business analysis and reporting needs. Gathering of business requirements and creating architectural designs. Works with architects and business partners to fashion out the technical vision for applications in Customer Data Warehouses employing SSIS, and SQL server. Designing, developing, and supporting new and current ETL processes employing industry standards and best practices to enhance loading of data from and into different source/ target systems. The data warehouse developer’s role in an organization also includes providing support to the organization’s business requirements in the
+Required / Desired Skills
+Experience performing data warehouse architecture development and management (Required 4 Years)
+Exceptional experience developing codes, testing for quality assurance, and monitoring of database (Required 4 Years)
+Gathering of business requirements and creating architectural designs. (Required 4 Years)
+Strong experience with technologies such as SQL Server, SSIS and stored procedures (Required 4 Years)

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transcript Editor</title>
+        <link rel="stylesheet" href="../static/styles-signup.css">
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <a href="Home.html">
+                    <img src="../static/assets/logo.png" class="logo">
+                </a>
+                
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="prices.html">Products</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="sign-up.html">Sign Up</a></li>
+                </ul>
+                
+            </nav>
+
+            
+            <div class="rectangle">
+                <div class="black-side">
+                    <p class="title">Sign In</p>
+                    <p class="paragraph">A world class resume parser and employment search tool.</p>
+                    <p class="paragraph">Join Jobify to optimize your job application or find potential emplyers!</p>
+                    <p></p>
+                </div>
+                <div class="pink-side">
+                    <form action="action_page.php" method="post">                      
+                        <div class="sign-in-container">
+                          <label for="uname"><b>Username</b></label>
+                          <input type="text" placeholder="Enter Username" name="uname" required autocomplete="off">
+                      
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required autocomplete="off">
+
+
+                          <button type="submit"  class="sign-in-button" required><a href="upload.html">Login as Employee</a></button >
+
+                          <button type="submit" class="sign-in-button" required><a href="search.html">Login as Employer</a></button>
+
+                          <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                          </label>
+                        </div>
+                      
+                        <div class="sign-in-container" style="background-color:#ffffff">
+                          <a href="Home.html"><button type="button" class="cancelbtn" class="sign-in-button">Cancel</button></a>
+                          <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                      </form>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

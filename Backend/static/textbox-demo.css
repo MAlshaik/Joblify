@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-color: #260238;
+    background-position: center;
+    background-size:  cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}   
+
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    min-height: 700px;
+    background-color: rgba(225,255,255,0.2);
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: white;
+    width:100%;
+    height:30%
+
+}
+
+::placeholder {
+    color: lightslategray;
+}
+
+.search-bar button img{
+    width: 25px;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #58629b;
+    cursor: pointer;
+}
+
+button {
+    width: 180px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    color: #4B4B4B;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #EB46B4;
+    color: white;
+}
+
+.hero {
+    background: #260238;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+  
+  }
+  section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #260238;
+  
+  }
+  .box {
+    position: relative;
+    background: pink;
+    width: 90vh;
+    height: 60vh;
+  }
+  
+  nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+    background: #16191E;
+    
+  }
+  
+  nav .menu-img {
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  nav .logo {
+    width: 40px;
+    cursor: pointer;
+  
+  }
+  
+  nav ul{
+    flex: 1;
+    text-align: right;
+  
+  }
+  
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  button{
+    background: #efefef;
+    height: 40px;
+    width: 400px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+  }
+

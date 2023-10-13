@@ -1,0 +1,342 @@
+/*This is the css page for the upload and the results pages*/
+
+#pdf-drop-area {
+    border: 2px  #ccc;
+    padding: 50px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#pdf-file-input {
+    cursor: pointer;
+  }
+#pdf-file {
+    display: none;
+}
+form {
+    width: 70%; /* or any other desired width */
+    margin: 0 auto; /* center the form horizontally */
+    transform: scale(0.7); /* adjust the size of the form */
+}
+
+.rectangle {
+    width: 150vh;
+    height: 65vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background: #EB46B4;
+}
+
+.drag-drop-image {
+    width: 200px;
+    height: 200px;
+    background-image: url('assets/upload.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica';
+    box-sizing: border-box;
+
+}
+
+.hero {
+    background: #260238;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    
+
+}
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background: #260238;
+
+}
+.box {
+    position: relative;
+    background: pink;
+    width: 160vh;
+    height: 70vh;
+}
+
+.box-left {
+    position: relative;
+    right: 100px;
+    background: black;
+    width: 50vh;
+    height: 70vh;
+}
+
+.float-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #260238;
+}
+
+.float-child-L {
+    position: center;
+    display: inline-block;
+    width: 50vh;
+    height: 50vh;
+    background:pink;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}  
+.float-child-R {
+    position: center;
+    display: inline-block;
+    width: 50vh;
+    height: 50vh;
+    background:black;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}  
+.hero .nav-bar {
+    color: black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+    background: #16191E;
+}
+
+nav .menu-img {
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav .logo {
+    width: 40px;
+    cursor: pointer;
+
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+button span {
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+
+}
+
+.text-container{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+
+.text-container h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.text-container p{
+    font-size: 25px;
+}
+
+.text-container a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 10px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+
+}
+
+p.title {
+    padding-top: 20px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 65px;
+    font-weight: 100;
+
+}
+
+p.paragraph {
+    font-size: 25px;
+    padding-left: 30px;
+    max-width: 400px;
+    
+}
+
+.sign-up{
+    margin-top: 7%;
+    margin-left: 50%;
+    z-index: 2;
+}
+
+.sign-up a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 10px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+/* Define the rectangle styles */
+.rectangle {
+    width: 150vh;
+    height: 65vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+/* Define the black and pink sides of the rectangle */
+.rectangle .black-side {
+    width: 50%;
+    background-color: black;
+}
+
+.rectangle .pink-side {
+    width: 50%;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Define the button styles */
+.rectangle button {
+    width: 180px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    color: #4B4B4B;
+    font-size: 16px;
+}
+
+.rectangle button:hover {
+    background-color: #260238;
+    color: white;
+}
+
+p.tag {
+    color: #4B4B4B;
+    font-size: 18px;
+    padding-left: 30px;
+    max-width: 400px;
+    padding-right: 20px;
+}
+
+.box__dragndrop,
+.box__uploading,
+.box__success,
+.box__error {
+  display: none;
+}
+
+/*This is styling specific for the results page.*/
+.pdf-results{
+    position: absolute;
+    max-width:fit-content;
+    min-width: 40%;
+    height:100%;
+}
+
+#temp-pdf-display{
+    position: absolute;
+    top:125px;
+    left:10%;
+    width: 40%;
+    height:70%;
+    background-color: none
+}
+
+#temp-pdf-display img{
+    width: 690px;
+}
+#number-display{
+    position: absolute;
+    top:125px;
+    left:65%;
+    width: 20%;
+    height:15%;
+    background-color: #3e2a48;
+}
+
+#number{
+    position: absolute;
+    top:-15%;
+    left:18%;
+    font-size:50px;
+    color:white;
+}
+
+#out-of{
+    position: absolute;
+    top:-15%;
+    left:34%;
+    font-size:50px;
+    color:white;
+}
+
+#description-display{
+    position: absolute;
+    top:325px;
+    left:65%;
+    width: 450px;
+    height:fit-content;
+    /* background-color: #3e2a48; */
+    color:white;
+    font-size: 50px;
+}
+
+#ex-resume{
+    height:600px;;
+}

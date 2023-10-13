@@ -1,0 +1,89 @@
+John Snowforn
+
+Business Intelligence Developer
+
+314-729-3873
+
+john.snowform@gmail.com
+
+linkedin.com/in/snowformjohn
+
+ 
+
+Summary
+
+
+A highly driven business intelligence developer with 5 years of experience. Strong understanding of SQL and relational databases. Experienced in creating complex dashboards using Tableau, Sisense, and Qlikview with particular experience in the healthcare industry. Redesigned a dashboard resulting in a 15% time decrease in medical record analysis.
+
+ 
+
+Experience
+
+ 
+
+Business Intelligence Developer
+
+Healthlabs Research Center, Columbus, OH
+
+June 2018–present
+
+Developed, identified, designed, built, tested, optimized, and maintained a Data Warehouse using the entire Microsoft BI Stack 
+Key contributor to design phase of a 12project to help complete the redesign of a business partner SQL Server Data Warehouse.
+Created Star Schemas for BI applications.
+Key achievement: Redesign of new dashboard resulting in a 15% time decrease in medical record analysis.
+
+ 
+
+Junior Business Intelligence Developer
+
+Spice Date Services, Columbus, OH
+
+October 2016– May 2018
+
+Developed a large number of BI reporting tool suites.
+Provided technical oversight to clients.
+Participated in planning and implementation of product roadmap.
+ 
+
+Education
+
+ 
+
+Bachelor of Computer Science 
+
+Mercy College of Ohio, Toledo, OH
+
+2011
+
+ 
+
+Skills
+
+ 
+
+Critical Thinking
+Problem Solving
+Time Management
+Mathematics
+Teamwork
+Logical Thinking
+ 
+
+Programming Languages
+
+ 
+
+Python
+JavaScript
+C++
+SQL
+R
+ 
+
+Languages
+
+ 
+
+English (Native)
+French C1
+Spanish B2

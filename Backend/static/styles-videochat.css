@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    color: rgb(37, 37, 37);
+}
+
+h1 {
+    background: #EB46B4
+    ;
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+}
+
+#toolbar {
+    /* position: absolute; */
+    /* right: 0; */
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 70px;
+    background-color: #202020;
+}
+
+#toolbar * {
+    margin-bottom: 6px;
+}
+
+#toolbar label {
+    font-size: 12px;
+}
+
+#toolbar input {
+    width: 100%;
+}
+
+#toolbar button {
+    background-color: #EB46B4
+    ;
+    border: none;
+    border-radius: 1px;
+    color:white;
+    padding: 2px;
+}
+
+#clear{
+    position: relative;
+    top: 70%;
+}
+
+#toolbar img{
+    position: relative;
+    left: 20%;
+    width: 40px;
+}
+
+.camera{
+    background-color:black;
+    width:225px;
+    height: 150px;
+    z-index: 100;
+}
+
+/* #cam1{
+    position: relative;
+    top: 10%;
+    left:5%;
+}
+
+#cam2{
+    position: relative;
+    top: 40%;
+    left:5%;
+} */
+
+#drawing-board-board {
+    background-color: rgb(37, 37, 37);
+    /* position: relative;
+    top:-38%;
+    z-index:99; */
+}
